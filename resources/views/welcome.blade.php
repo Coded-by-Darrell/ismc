@@ -20,6 +20,29 @@
         @endif
     </head>
     <body class="bg-[#FDFDFC] dark:bg-[#ffffff] text-[#ffffff] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
-       <h1>hello</h1>
+       <h1>hello, welcome to ISMC</h1>
+       
+       <!-- header-->
+       <div>
+            <ul>
+                <li>About</li>s
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+       </div>
+
+       <!-- Featured Services-->
+       <div>
+        <h1>Featured Services:</h1>
+        <div>
+            @foreach($featuredServices as $service)
+            <div>
+                <h2>{{ $service['title'] }}</h2>
+                <p>{{ $service['caption'] }}</p>
+            </div>
+        @endforeach
+        </div>
+        
+       </div>
     </body>
 </html>
