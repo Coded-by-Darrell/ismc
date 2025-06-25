@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('about')
+@section('title', 'About Us' )
+
+@section('content')
 <div class="container">
     <h1>About Innovations Solution and Marketing Corporation</h1>
     

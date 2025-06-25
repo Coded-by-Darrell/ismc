@@ -1,8 +1,8 @@
-
-
 @extends('layouts.app')
 
-@section('service')
+@section('title', 'Services' )
+
+@section('content')
 <p>services</p>
 <div>
     <h1>Web Development Services:</h1>

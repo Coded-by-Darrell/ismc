@@ -8,8 +8,8 @@ use App\Http\Controllers\ControllerService;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route:: get('about', [ControllerAbout::class, 'index']);
+Route:: get('pages.about', [ControllerAbout::class, 'index']);
 
-Route:: get('contact', [ControllerContact::class, 'index']);
+Route:: get('pages.contact', [ControllerContact::class, 'index']);
 
-Route:: get('service', [ControllerService::class, 'index']);
+Route:: get('pages.service', [ControllerService::class, 'index']);

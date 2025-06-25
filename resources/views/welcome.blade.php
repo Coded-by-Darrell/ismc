@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'ISMC' )
+
 @section('content')
     <h1>hello, welcome to ISMC</h1>
         
