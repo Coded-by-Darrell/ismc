@@ -19,6 +19,6 @@ class ControllerService extends Controller
             ['serviceName' => 'Training & Workshops', 'servicePrice' => 'PHP 20000/day']
         ];
 
-        return view('service', compact('webdevServices', 'consultingServices'));
+        return view('pages.service', compact('webdevServices', 'consultingServices'));
     }
 }

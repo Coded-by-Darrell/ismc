@@ -23,7 +23,7 @@ class ControllerAbout extends Controller
         ['name' => 'Elon Musk', 'position' => 'Marketing Director']
        ];
 
-       return view('about', compact('companyInfo', 'teamMembers'));
+       return view('pages.about', compact('companyInfo', 'teamMembers'));
     }
 
     

@@ -19,6 +19,6 @@ class ControllerContact extends Controller
             ['branchLocation' => 'Davao Office', 'branchAddress' => '789 Digital Plaza, Davao City, Davao del Sur 8000'] 
         ];
 
-        return view('contact', compact('mainOfficeInfo', 'branchOffices'));
+        return view('pages.contact', compact('mainOfficeInfo', 'branchOffices'));
     }
 }
