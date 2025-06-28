@@ -17,6 +17,7 @@
         </ul>
     </nav>
 
+    {{-- This is where every content will go --}}
     <main>
         @yield('content')
     </main>

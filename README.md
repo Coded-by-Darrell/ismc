@@ -91,6 +91,11 @@ resources/views/
 - [ ] Implement contact form
 - [ ] Database integration
 
+## Prompts History
+Chapter 5: "okay lets proceed to the next chapter, check the file attached for the reference of next note. Pls be specific to the step by step. Let me know where can i use this in my project. If youu have idea please let me know, ill do the coding and you have to give me the contents. For example contents inside the about, services, contacts. fictional will do.
+
+Note: create simple examples only, important is i should get it when you explain it. no css or bootstrap needed. just a plain code since im new here and im studying it."
+
 ---
 
 *Last Updated: June 25, 2025*  
