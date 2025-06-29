@@ -2,7 +2,7 @@
 
 <div class="service-card">
     <div>
-        <h2>{{ $service['title'] }}</h2>
-        <p>{{ $service['caption'] }}</p>
+        <h2>{{ $title }}</h2>
+        <p>{{ $caption }}</p>
     </div>
 </div>
