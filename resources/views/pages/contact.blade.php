@@ -2,6 +2,13 @@
 
 @section('title', 'Contact Us' )
 
+@push('styles')
+    <style>
+        .error { color: red; font-size: 0.9em; }
+        .form-group { margin-bottom: 1rem; }
+    </style>
+@endpush
+
 @section('content')
 <h1>Contact Us</h1>
 
@@ -16,10 +23,19 @@
     </div>
 </div>
 
-
-
-<!--Form-->
+{{-- contact form --}}
+@include('components.contact.contact-form')
 
 @endsection
+
+@push('scripts')
+    <script>
+        console.log('Contact page loaded');
+    </script>
+@endpush
+
+
+
+
     
 

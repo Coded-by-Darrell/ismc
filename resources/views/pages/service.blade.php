@@ -1,29 +1,44 @@
 @extends('layouts.app')
 
-@section('title', 'Services' )
+@section('title', 'Services')
 
 @section('content')
-<p>services</p>
-<div>
-    <h1>Web Development Services:</h1>
-    <div>
-        @foreach($webdevServices as $webdevService)
-            <div>
-                <h2>{{ $webdevService['serviceName']}}</h2>
-                <p>Pricing: {{ $webdevService['servicePrice']}}</p>
-            </div>
-        @endforeach
+<h1>Our Services</h1>
+
+@auth
+    <div style="background: #e8f5e8; padding: 1rem; margin-bottom: 2rem;">
+        <p>✅ <strong>Logged in as {{ auth()->user()->name }}</strong></p>
+        <p>🎉 You get 10% discount on all services!</p>
     </div>
-</div>
-<div>
-    <h1>Consulting Services:</h1>
-    <div>
-        @foreach($consultingServices as $consultingService)
-            <div>
-                <h2>{{ $consultingService['serviceName']}}</h2>
-                <p>Pricing: {{ $consultingService['servicePrice']}}</p>
-            </div>
-        @endforeach
+@else
+    <div style="background: #fff3cd; padding: 1rem; margin-bottom: 2rem;">
+        <p>💡 <a href="/login">Login</a> to see member pricing and special offers!</p>
     </div>
-</div>
+@endauth
+
+<!-- Web Development Services -->
+@include('partials.service-category', [
+    'categoryTitle' => 'Web Development Services',
+    'services' => $webdevServices,
+    'categoryType' => 'web'
+])
+
+<!-- Consulting Services -->
+@include('partials.service-category', [
+    'categoryTitle' => 'Consulting Services', 
+    'services' => $consultingServices,
+    'categoryType' => 'consulting'
+])
+
+@once
+    <div style="margin-top: 2rem; padding: 1rem; background: #f8f9fa;">
+        <h3>🔒 Why Choose ISMC?</h3>
+        <ul>
+            <li>8+ years of experience</li>
+            <li>200+ satisfied clients</li>
+            <li>Professional team</li>
+            <li>Affordable pricing</li>
+        </ul>
+    </div>
+@endonce
 @endsection
